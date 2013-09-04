@@ -26,7 +26,11 @@ if($_SERVER['CONTENT_TYPE']=='application/x-www-form-urlencoded' && $_SERVER['RE
 
 	/* This variable is for alternating comment background */
 	$oddcomment = 'class="alt" ';
-include (TEMPLATEPATH.'/googleads.php');
+//include (TEMPLATEPATH.'/googleads.php'); // no, no include!
+if(function_exists('ass_googleads'))
+{
+    ass_googleads();
+}
 ?>
 
 <div id="commentcontainer">

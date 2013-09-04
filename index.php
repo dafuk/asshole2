@@ -15,17 +15,14 @@
       <article><?php the_content(__('(more...)')); ?></article>
     </li>
     <li>
-<article>
-<ins class="adsbygoogle"
-     style="display:inline-block;width:480px;height:60px"
-     data-ad-client="ca-pub-2134012079272013"
-     data-ad-slot="2198875640"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+    <?php
+    if(function_exists('ass_googleads'))
+    {
+	ass_googleads();
+    }
 
-</article>
-<hr>
+    ?>
+    <hr>
     </li>
 
     <?php endwhile; ?>
