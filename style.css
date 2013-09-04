@@ -1,0 +1,78 @@
+/**
+  Theme Name: Asshole
+  Version: 1.2
+  Author: ganjubas
+  Description: Asshole theme for assshole blog of a person who is an asshole, ME
+*/
+
+html {margin: 0;padding: 0;}
+
+body { direction: rtl;  font-family: Arial; background-color: #f1f1f1; text-shadow:0.5px 0px #666;  margin:0; padding:0; font-size: 19px; line-height: 1.5em;}
+#canvas {   width: 888px;  margin: 0 auto;}
+a { text-decoration: none; color: #696969;}
+#header {  margin: 10px; padding:20px;}
+#header h1, #header h4 { font-size: 30px;  margin: 0;  padding: 10px 0 10px 0; }
+#navbar
+{
+    background-color: #FAFAFA;
+    background-image: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
+    background-repeat: repeat-x;
+    border: 1px solid #D4D4D4;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    min-height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style-type:none;
+}
+#navbar li { float:right; line-height: 40px; margin: 0 5px 0 5px;}
+
+    .current_page_item a,
+    .current_page_parent a {
+      text-decoration: none;
+    }
+      .current_page_item a:hover,
+      .current_page_parent a:hover {
+        text-decoration: underline;
+      }
+
+#mainContent { width: 640px;  float: right;  padding: 0 20px 0 0;  margin: 0; }
+#mainContent h1 {    padding: 0;    margin: 10px 0 0 0;  }
+#mainContent h1.postTitle, #mainContent h2.postTitle {    font-size: 22px;  }
+#mainContent li { padding: 2px;}
+ol#posts {   list-style: none;    margin: 0;    padding: 0;  }
+li.postBubble,   div.postBubble { }
+.postBubble img { border:0;}
+#pagination {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+    #pagination li {
+      display: inlne;
+    }
+    #pagination .previous {
+      text-align: left;
+      float: left;
+    }
+    #pagination .future {
+      text-align: right;
+      float: right;
+    }
+
+article { padding: 10px;}
+.widget-tag-cloud {    padding-left: 5px; }
+
+#comment {  width: 500px;}
+
+#footer {  clear: both;  font-size: 80%;}
+
+.aligncenter,
+div.aligncenter {   display: block;   margin-left: auto;   margin-right: auto;}
+
+.alignleft {   float: left;}
+
+.alignright {   float: right;}
+code {   background-color: #F8F8F8;    border: 1px solid #DDDDDD;    border-radius: 3px 3px 3px 3px;    font-size: 13px;    padding: 6px 10px;    display:block;    margin: 15px;    text-align: left;    direction:ltr;}
+#sidebar { display: block; float: right; width: 200px; }
+#sidebar ul {list-style-type:none}
