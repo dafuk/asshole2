@@ -13,6 +13,7 @@
 
       <h1 class="postTitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
       <article><?php the_content(__('(more...)')); ?></article>
+	<?php the_tags( '<p><strong>תגיות:</strong> ', ', ', '</p>'); ?>
 
       <hr>
 

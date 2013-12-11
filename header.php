@@ -1,8 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html dir="rtl" lang="he-IL" prefix="og: http://ogp.me/ns">
 <head>
-	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>">
 	<title><?php if(is_home()) bloginfo('name'); else wp_title(''); ?></title>
+	<link rel="canonical" href="http://blog.dafuk.co.il/" />
+	<meta property="og:locale" content="he_IL"/>
+	<meta property="og:type" content="article"/>
+	<meta property="og:title" content="בלוג דפוק"/>
+	<meta property="og:description" content="בלוג דפוק מלא בציורים או איורים מצחיקים ודעות דפוקות, גם חדשות מהסוג השונה וגם קצת להרגיש פרפרים בבטן וזין בתחת"/>
+	<meta property="og:url" content="http://blog.dafuk.co.il/"/>
+	<meta property="og:site_name" content="בלוג דפוק"/>
+	<meta property="og:image" content="http://blog.dafuk.co.il/logo.png"/>
+	<link rel="author" href="https://plus.google.com/+BenjaminVolkov" />
 	<style type="text/css" media="screen">
 	<?php
 	echo file_get_contents(get_template_directory().'/style.css');
@@ -14,7 +26,7 @@
 	<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
-  <div id="canvas">
+  <div id="wrapper">
     <div id="header">
     <a href="/"><?php bloginfo('name'); ?></a> <?php bloginfo('description'); ?>
     </div>
@@ -24,14 +36,5 @@
     </ul>
     <div id="mainContent">
 
-<div class="g-plusone" data-annotation="none"></div>
+    <g:plusone></g:plusone>
 
-<script type="text/javascript">
-  window.___gcfg = {lang: 'iw'};
-
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>

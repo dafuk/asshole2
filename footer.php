@@ -9,6 +9,19 @@
        <!-- Page compiled in <?php timer_stop(1); ?> seconds -->
       </div>
     </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<!-- sorry, google will give you ajax and good looks -->
+ <script type="text/javascript">
+      window.___gcfg = {
+        lang: 'en-US'
+      };
+
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
 
 <script type="text/javascript">
 
@@ -23,7 +36,9 @@
   })();
 
 </script>
-
+<div id="floatMenu1">
+    Ahoy, mate!
+</div>
 
   </body>
 </html>
