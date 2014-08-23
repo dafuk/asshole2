@@ -50,7 +50,7 @@ echo '
 
 add_filter('the_content', function ($text) {
 // patch english
-if(!preg_match('/[]/',$text))
+if(!preg_match('/[א-ת]/',$text))
 {
 	return '<p style="direction: ltr">'.$text.'</p>';
 }
