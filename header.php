@@ -6,14 +6,14 @@
 
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>">
 	<title><?php if(is_home()) bloginfo('name'); else wp_title(''); ?></title>
-	<link rel="canonical" href="http://blog.dafuk.co.il/" />
+	<link rel="canonical" href="<?php echo home_url(); ?>" />
 	<meta property="og:locale" content="he_IL"/>
 	<meta property="og:type" content="article"/>
 	<meta property="og:title" content="בלוג דפוק"/>
-	<meta property="og:description" content="בלוג דפוק מלא בציורים או איורים מצחיקים ודעות דפוקות, גם חדשות מהסוג השונה וגם קצת להרגיש פרפרים בבטן וזין בתחת"/>
-	<meta property="og:url" content="http://blog.dafuk.co.il/"/>
-	<meta property="og:site_name" content="בלוג דפוק"/>
-	<meta property="og:image" content="http://blog.dafuk.co.il/logo.png"/>
+	<meta property="og:description" content="<?php bloginfo('description'); ?>"/>
+	<meta property="og:url" content="<?php echo home_url(); ?>"/>
+	<meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
+	<meta property="og:image" content="/logo.png"/>
 	<link rel="author" href="https://plus.google.com/+BenjaminVolkov" />
 	<style type="text/css" media="screen">
 	<?php
@@ -35,6 +35,5 @@
 			<?php wp_list_pages('title_li=' ); ?>
     </ul>
     <div id="mainContent">
-
     <g:plusone></g:plusone>
 

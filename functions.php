@@ -48,6 +48,17 @@ echo '
 
 }
 
+add_filter('the_content', function ($text) {
+// patch english
+if(!preg_match('/[]/',$text))
+{
+	return '<p style="direction: ltr">'.$text.'</p>';
+}
+else
+{
+	return $text;
+}
+});
 
 class MySettingsPage
 {

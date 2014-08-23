@@ -37,7 +37,7 @@
 
 </script>
 <div id="floatMenu1">
-    Ahoy, mate!
+    היום כדאי לבשל מרק
 </div>
 
   </body>
