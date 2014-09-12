@@ -37,7 +37,10 @@
 
 </script>
 <div id="floatMenu1">
-    היום כדאי לבשל מרק
+<small>
+   eat your vegetables!
+
+</small>
 </div>
 
   </body>
