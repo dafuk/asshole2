@@ -42,6 +42,8 @@ echo '
   (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
+<!-- No way back -->
+<iframe data-aa='58112' src='//ad.a-ads.com/58112?size=120x240' scrolling='no' style='width:120px; height:240px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
 </article>
 ';
 
