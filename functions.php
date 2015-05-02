@@ -43,7 +43,6 @@ echo '
 </script>
 
 <!-- No way back -->
-<iframe data-aa='58112' src='//ad.a-ads.com/58112?size=120x240' scrolling='no' style='width:120px; height:240px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
 </article>
 ';
 
@@ -54,6 +53,7 @@ add_filter('the_content', function ($text) {
 // patch english
 if(!preg_match('/[א-ת]/',$text))
 {
+
 	return '<p style="direction: ltr; text-align:left;">'.$text.'</p>';
 }
 else
