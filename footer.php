@@ -9,7 +9,7 @@
        <!-- Page compiled in <?php timer_stop(1); ?> seconds -->
       </div>
     </div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <!-- sorry, google will give you ajax and good looks -->
  <script type="text/javascript">
       window.___gcfg = {
@@ -36,12 +36,13 @@
   })();
 
 </script>
-<div id="floatMenu1">
-<small>
-   eat your vegetables!
-
-</small>
-</div>
-
+<div id="floatMenu1">&nbsp;</div>
+<div id="boomboom">&nbsp;</div>
+<script>
+$.get( "http://dafuk.co.il/joke.php?view=plain", function( data ) {
+  $("boomboom").html('<p>' + data + '</p>');
+document.getElementById('floatMenu1').innerHTML=data;
+});
+</script>
   </body>
 </html>
