@@ -30,6 +30,26 @@ function will_paginate()
   }
   return false;
 }
+function ass_post_item()
+{
+	$pid = get_the_ID();
+	echo  '<li class="postBubble" id="post-'.$pid.'">';
+ 	echo '<h2 class="postTitle"><a href="'.get_permalink().'" rel="bookmark">'.the_title('','',false).'</a></h2>';
+        echo '<article>'.the_content(__('(more...)')).'</article>';
+    	echo the_tags( '<span><strong>תגיות:</strong> ', ', ', '</span>').'
+    </li>
+    <li>';
+    
+    if(function_exists('ass_googleads'))
+    {
+        ass_googleads();
+    }
+
+   
+    $html ='<hr>
+    </li>';
+   echo $html; 
+}
 function ass_googleads()
 {
 echo '

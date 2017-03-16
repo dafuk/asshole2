@@ -8,24 +8,7 @@
   <ol id="posts"><?php
 
     while (have_posts()) : the_post(); ?>
-
-    <li class="postBubble" id="post-<?php the_ID(); ?>">
-
-      <h2 class="postTitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-      <article><?php the_content(__('(more...)')); ?></article>
-    <?php the_tags( '<span><strong>תגיות:</strong> ', ', ', '</span>'); ?>
-    </li>
-    <li>
-    <?php
-    if(function_exists('ass_googleads'))
-    {
-	ass_googleads();
-    }
-
-    ?>
-    <hr>
-    </li>
-
+<?php	ass_post_item(); ?>
     <?php endwhile; ?>
 
   </ol>
